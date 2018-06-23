@@ -15,7 +15,12 @@
   p {
     text-align: justify;
   }
-  .icon {
-    width: 20px;
+  .social {
+    a {
+      width: 20px;
+      img {
+        width: 20px;
+      }
+    }
   }
 }
