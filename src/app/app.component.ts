@@ -25,10 +25,9 @@ export class AppComponent implements OnInit {
 
     anime({
       targets: '.image',
-      translateY: -y,
+      translateX: -x / 2,
       direction: 'reverse',
-      easing: 'easeInOutQuart',
-      duration: 1500
+      easing: 'easeInOutQuart'
     });
   }
 }
