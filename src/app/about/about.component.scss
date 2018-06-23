@@ -1,0 +1,21 @@
+:host() {
+  height: 100%;
+  .image {
+    $dim: 0.6;
+    background-image: linear-gradient( rgba(0, 0, 0, $dim), rgba(0, 0, 0, $dim)), url('/assets/profile.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+  .feature {
+    font-family: 'Lobster';
+  }
+  .white {
+    color: white;
+  }
+  p {
+    text-align: justify;
+  }
+  .icon {
+    width: 20px;
+  }
+}
