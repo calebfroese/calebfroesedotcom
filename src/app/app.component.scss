@@ -1,22 +1,10 @@
 :host() {
   height: 100%;
   .image {
-    $dim: 0.5;
+    $dim: 0.6;
     background-image: linear-gradient( rgba(0, 0, 0, $dim), rgba(0, 0, 0, $dim)), url('/assets/profile.jpg');
     background-position: center;
     background-size: cover;
-  }
-  .hamburger {
-    max-width: 8vw;
-    div {
-      border: 2px solid black;
-      &:nth-child(1) {
-        width: 50%;
-      }
-      &:nth-child(3) {
-        width: 75%;
-      }
-    }
   }
   .feature {
     font-family: 'Lobster';
