@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as dayjs from 'dayjs';
+import * as anime from 'animejs';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +11,8 @@ export class AppComponent implements OnInit {
   version: string;
 
   ngOnInit() {
+    const { innerWidth: x, innerHeight: y } = window;
+
     const createdAt = dayjs(new Date('1997-10-07'));
     const updatedAt = dayjs();
     const years = updatedAt.diff(createdAt, 'year');
@@ -19,5 +22,13 @@ export class AppComponent implements OnInit {
       .subtract(months, 'month')
       .diff(createdAt, 'day');
     this.version = [years, months, days].join('.');
+
+    anime({
+      targets: '.image',
+      translateY: -y,
+      direction: 'reverse',
+      easing: 'easeInOutQuart',
+      duration: 1500
+    });
   }
 }
