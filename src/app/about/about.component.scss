@@ -1,7 +1,8 @@
 :host() {
   height: 100%;
-  div {
-    perspective: 500px;
+  .perspective {
+    perspective: 300px;
+    overflow: hidden;
   }
   .image-abstract,
   .image {
