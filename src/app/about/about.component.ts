@@ -9,10 +9,28 @@ import * as anime from 'animejs';
 export class AboutComponent implements OnInit {
   ngOnInit() {
     const { innerWidth: x, innerHeight: y } = window;
+    const duration = 2000;
+    anime({
+      targets: '.about',
+      scale: 0.4,
+      direction: 'reverse',
+      duration,
+      easing: 'easeInOutQuart'
+    });
     anime({
       targets: '.image',
-      translateX: -x / 2,
+      translateY: -y / 2,
+      rotateX: '0.05turn',
       direction: 'reverse',
+      duration,
+      easing: 'easeInOutQuart'
+    });
+    anime({
+      targets: '.image-abstract',
+      translateY: y / 2,
+      rotateX: '-0.05turn',
+      direction: 'reverse',
+      duration,
       easing: 'easeInOutQuart'
     });
   }

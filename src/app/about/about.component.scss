@@ -1,10 +1,22 @@
 :host() {
   height: 100%;
+  div {
+    perspective: 500px;
+  }
+  .image-abstract,
+  .image {
+    background-position: center;
+    background-size: cover;
+  }
+  .image-abstract {
+    $dim: 0.5;
+    background-image: linear-gradient( rgba(255, 255, 255, $dim), rgba(255, 255, 255, $dim)), url('/assets/dec.jpg');
+    background-color: white;
+    background-blend-mode: inherit
+  }
   .image {
     $dim: 0.6;
     background-image: linear-gradient( rgba(0, 0, 0, $dim), rgba(0, 0, 0, $dim)), url('/assets/profile.jpg');
-    background-position: center;
-    background-size: cover;
   }
   .feature {
     font-family: 'Lobster';
