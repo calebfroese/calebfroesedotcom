@@ -7,6 +7,7 @@ import * as anime from 'animejs';
 })
 export class AppComponent implements AfterViewInit {
   sliders = new Array(4);
+  sliding = true;
   ngAfterViewInit() {
     const { innerHeight: y } = window;
     anime({
@@ -14,7 +15,8 @@ export class AppComponent implements AfterViewInit {
       duration: (_, i) => 500 + i * 300,
       delay: (_, i) => (this.sliders.length - i) * 500,
       translateY: y,
-      easing: 'easeInCubic'
+      easing: 'easeInCubic',
+      complete: () => (this.sliding = false)
     });
   }
 }

@@ -1,5 +1,5 @@
 <app-about></app-about>
-<div class="slider-container position-fixed">
+<div *ngIf="sliding" class="slider-container position-fixed">
   <div *ngFor="let slider of sliders" class="position-absolute">
     <div class="slider"></div>
   </div>
