@@ -1,19 +1,10 @@
 :host() {
   height: 100%;
-  .image-abstract,
-  .image {
-    background-position: center;
-    background-size: cover;
-  }
-  .image-abstract {
-    $dim: 0.5;
-    background-image: linear-gradient( rgba(255, 255, 255, $dim), rgba(255, 255, 255, $dim)), url('/assets/dec.jpg');
-    background-color: white;
-    background-blend-mode: inherit
-  }
   .image {
     $dim: 0.6;
     background-image: linear-gradient( rgba(0, 0, 0, $dim), rgba(0, 0, 0, $dim)), url('/assets/profile.jpg');
+    background-position: center;
+    background-size: cover;
   }
   .feature {
     font-family: 'Lobster';
@@ -31,5 +22,19 @@
         width: 20px;
       }
     }
+  }
+  /* Particle JS helpers */
+  .particle-container {
+    * {
+      z-index: 1;
+    }
+  }
+  #particles {
+    background: #d7d7d7;
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
   }
 }

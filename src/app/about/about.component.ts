@@ -6,5 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent implements OnInit {
-  ngOnInit() {}
+  ngOnInit() {
+    (window as any).particlesJS.load('particles', '/assets/particles.json');
+  }
 }
