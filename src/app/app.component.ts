@@ -18,5 +18,13 @@ export class AppComponent implements AfterViewInit {
       easing: 'easeInCubic',
       complete: () => (this.sliding = false)
     });
+    anime({
+      targets: '.img-loader',
+      duration: 500,
+      delay: 1500,
+      opacity: 0,
+      scale: 5,
+      easing: 'easeInOutCubic'
+    });
   }
 }
