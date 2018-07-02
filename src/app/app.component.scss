@@ -15,15 +15,25 @@
     }
     &:nth-child(1) .slider {
       background: lighten($dark, 30);
+      opacity: 0.4;
     }
     &:nth-child(2) .slider {
-      background: lighten($dark, 20)
+      background: lighten($dark, 20);
+      opacity: 0.6;
     }
     &:nth-child(3) .slider {
-      background: lighten($dark, 10)
+      background: lighten($dark, 10);
+      opacity: 0.8;
     }
     &:nth-child(4) .slider {
-      background: $dark
+      background: $dark;
     }
   }
+}
+
+.img-loader {
+  z-index: 1000;
+  display: block;
+  width: 20vw;
+  margin: 30vh auto 0;
 }
