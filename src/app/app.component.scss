@@ -1,6 +1,8 @@
 @import '../variables';
 .slider-container {
   overflow: hidden;
+  // Position above image
+  z-index: 2;
   &,
   div {
     top: 0;

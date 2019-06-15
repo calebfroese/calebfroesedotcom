@@ -6,6 +6,9 @@
     background-image: linear-gradient( rgba(0, 0, 0, $dim), rgba(0, 0, 0, $dim)), url('/assets/profile.jpg');
     background-position: center;
     background-size: cover;
+    // Add a shadow and prioritize its z index above the later content
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.4);
+    z-index: 1;
   }
   .feature {
     font-family: 'Lobster';
